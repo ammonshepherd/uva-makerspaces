@@ -60,6 +60,22 @@ p {
     background-color: #222;
 }
 
+.slab h1, .fablab h1, .rpl h1 {
+  background: rgba(0,0,0,0.5);
+}
+
+.slab {
+  background-image: url(../img/slab-header.jpg);
+}
+
+.fablab {
+  background-image: url(../img/fablab-header.jpg);
+}
+
+.rpl {
+  background-image: url(../img/rpl-header.jpg);
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
@@ -178,8 +194,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
-    background-position: center;
+    background-image: url(../img/makerspace7-1024x682.jpg);
+    background-position: bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -198,6 +214,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+    background: rgba(0,0,0,0.5);
 }
 
 header .header-content .header-content-inner hr {
@@ -208,12 +225,13 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: black;
+    background: rgba(255,255,255,0.8);
 }
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 50%;
     }
 
     header .header-content {
@@ -256,6 +274,23 @@ header .header-content .header-content-inner p {
 
 .service-box p {
     margin-bottom: 0;
+}
+
+.locations-title {
+  text-align: center;
+}
+
+.locations-title a {
+  color: #ddd;
+}
+
+.location-info {
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+#portfolio {
+  background: #222;
 }
 
 .portfolio-box {
