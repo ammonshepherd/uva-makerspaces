@@ -16,8 +16,17 @@
               </tr>
             {% for resource in site.data.resources %}
               <tr>
-                <th>{{ resource.resource }} </th>
-                <td>{{ resource.locations }}</td>
+                <th>
+                  {{ resource.resource }} 
+                </th>
+                <td>
+                  {% for location in resource.locations %}
+                    <a href="{{ location.page }}">{{ location.name }}</a>
+                    {% if forloop.last == false %}
+                      &nbsp; | &nbsp;
+                    {% endif %}
+                  {% endfor %}
+                </td>
               </tr>
             {% endfor %}
             </table>
